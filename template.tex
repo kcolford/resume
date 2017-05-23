@@ -12,7 +12,7 @@
 % misc
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
-\usepackage[margin=1.5in]{geometry}
+\usepackage[margin=1.25in]{geometry}
 
 % personal info
 \name{Kieran}{Colford}
@@ -21,7 +21,7 @@
 \homepage{www.kcolford.com}
 \social[linkedin]{kierancolford}
 \social[github]{kcolford}
-\extrainfo{StackOverflow: randomusername (over 5,000 reputation)}
+\extrainfo{StackOverflow: randomusername (almost 6,000 reputation)}
 %\quote{Some quote}
 
 % environment for a letter
@@ -30,7 +30,7 @@
   \opening{Dear Sir or Madam,}%
   \closing{Sincerely,}%
   \enclosure{R\'esum\'e}%
-  \makelettertitle%
+  \makelettertitle%p
 }{%
   \makeletterclosing%
   \clearpage%
@@ -50,7 +50,7 @@
 \makecvtitle
 
 % Required by Co-op
-3A Computer Science, Honours, Co-operative Program, University of
+3B Computer Science, Honours, Co-operative Program, University of
 Waterloo, ID Number: 20580433
 
 \section{Summary of Qualifications}
@@ -58,34 +58,39 @@ Waterloo, ID Number: 20580433
 \begin{itemize}
 \item Excellent problem-solving skills demonstrated by education
   and self-initiated open source projects
-\item Commended by supervisors on a consistent basis for being a hard
-  worker
+\item Commended by supervisors on a consistent basis for being a
+  highly reliable and independent hard worker
 \item Gained extensive skills through personal experience in a number
   of programming languages and technologies.
   \begin{description}
-  \item[Programming Languages] C/C++, Java, Python, Javascript/NodeJS,
-    x86 Assembly (AT\&T syntax), Perl, Haskell, Bourne Shell, SQL and
-    Racket
-  \item[Technologies] TCP/IP, SSL/TLS, Three.js, Apache Web Server,
-    Nginx, CGI, MySQL, PostgreSQL, CouchDB, Docker, Containers, WebGL
-    (OpenGL ES), HTML5, JSON, XML, AngularJS, JQuery, Ajax, and CSS3
-  \item[Documentation] Doxygen, Markdown, ReStructuredText and \LaTeX{}
+  \item[Programming Languages] C/C++, Go, Java, Python,
+    Javascript/NodeJS, x86 Assembly (AT\&T syntax), Perl, Haskell,
+    Bourne Shell, SQL and Racket
+  \item[Technologies] Ethereum, TCP/IP, IPv6, UDP, SCTP, SSL/TLS,
+    Three.js, Apache Web Server, Nginx, CGI, MySQL, PostgreSQL,
+    CouchDB, Bind 9, Busybox, Kerberos, OpenLDAP, Samba, Wire Guard,
+    OpenVPN, X.509, Let's Encrypt, GnuPG, IPFS, Libvirt, Docker,
+    Containers, WebGL (OpenGL ES), HTML5, JSON, XML, AngularJS,
+    JQuery, Ajax, and CSS3
+  \item[Documentation] Org Mode, Doxygen, Markdown, ReStructuredText
+    and \LaTeX{}
   \item[Libraries] OpenMP, Qt, Gtk+, OpenGL, SQLite and Boost
   \item[Build Systems] Grunt, Gulp, Makefiles, CMake, and GNU Autotools
-  \item[Development Tools] GIT, GDB, Jenkins, Unix Command Line, Linux
-    and Emacs
+  \item[Development Tools] GIT, GDB, Jenkins, Unix Command Line,
+    Linux, Arch Linux and Emacs
   \end{description}
-\item CPR C qualification with AED training
 \item Canadian Citizenship
 \end{itemize}
 
 \section{Work Experience}
 
-\cventry{May.--Aug. 2016}{Fullstack Software
+\cventry{May.--Aug. 2016 and Jan.--Apr. 2017}{Fullstack Software
   Developer}{BlueRover}{Kitchener, Ontario}{}{\begin{itemize}
   \item Engineered a trend analytics engine that identifies potential
     hazards in food preparation thanks to data provided by the
     I.O.T. (Internet of Things) infrastructure.
+  \item Maintained and expanded major product offerings using
+    innovative tools and techniques.
   \item Independantly developed a multitude solutions for our existing
     product base in an agile environment.
   \end{itemize}}
@@ -127,6 +132,15 @@ Waterloo, ID Number: 20580433
 \cventry{2014}{Ontario Scholar Certificate}{The Abelard School}{}{}{}
 
 \section{Projects}
+
+\cventry{2017}{Dynamic DNS}{}{}{}{Designed and developed software to
+  dynamically update DNS records for nodes without static IP addresses
+  for reducing costs and improving usability of mobile workstations.}
+
+\cventry{2016}{Linux Firmware Support}{}{}{}{Developed firmware for
+  supporting the Atmel MaxTouch Touchscreen in the Lenovo Thinkpad
+  Yoga 11e Chromebook (and other devices such as the Google Pixel 2)
+  on vanilla Linux kernels.}
 
 \cventry{2016}{Personal Enterprise Infrastructure}{}{}{}{Networked
   together all personal computing platforms, from Chromebook to cloud
