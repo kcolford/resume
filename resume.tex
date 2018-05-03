@@ -12,7 +12,7 @@
 % misc
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
-\usepackage[margin=1.25in]{geometry}
+\usepackage[margin=1in]{geometry}
 
 % personal info
 \name{Kieran}{Colford}
@@ -30,28 +30,33 @@
   \opening{Dear Sir or Madam,}%
   \closing{Sincerely,}%
   \enclosure{R\'esum\'e}%
-  \makelettertitle%p
+  \makelettertitle%
 }{%
   \makeletterclosing%
   \clearpage%
 }
 
+\newif\ifcoop%
+\newif\ifincludeletter%
+
+%\includelettertrue
+
 \begin{document}
 
 % cover letter
-\newif\ifincludeletter
-%\includelettertrue
-\ifincludeletter
+\ifincludeletter%
 \begin{coverletter}{Company, Inc.\\123 somestreet\\some city}
-  \lipsum[1-3]
+  \lipsum[1-3]%
 \end{coverletter}
 \fi
 
-\makecvtitle
+\makecvtitle%
 
 % Required by Co-op
+\ifcoop%
 3B Computer Science, Honours, Co-operative Program, University of
 Waterloo, ID Number: 20580433
+\fi
 
 \section{Summary of Qualifications}
 
@@ -65,16 +70,16 @@ Waterloo, ID Number: 20580433
   \begin{description}
   \item[Programming Languages] C/C++, Go, Java, Python,
     Javascript/NodeJS, x86 Assembly (AT\&T syntax), Perl, Haskell,
-    Bourne Shell, SQL and Racket
-  \item[Technologies] Ethereum, TCP/IP, IPv6, UDP, SCTP, SSL/TLS,
-    Three.js, Apache Web Server, Nginx, CGI, MySQL, PostgreSQL,
-    CouchDB, Bind 9, Busybox, Kerberos, OpenLDAP, Samba, Wire Guard,
-    OpenVPN, X.509, Let's Encrypt, GnuPG, IPFS, Libvirt, Docker,
-    Containers, WebGL (OpenGL ES), HTML5, JSON, XML, AngularJS,
-    JQuery, Ajax, and CSS3
+    Bourne Shell, SQL, Emacs Lisp, and Racket
+  \item[Technologies] Neural Networks, Ethereum, TCP/IP, IPv6, UDP,
+    SCTP, SSL/TLS, Three.js, Apache Web Server, Nginx, CGI, MySQL,
+    PostgreSQL, CouchDB, Bind 9, Busybox, Kerberos, OpenLDAP, Samba,
+    Wire Guard, OpenVPN, X.509, Let's Encrypt, GnuPG, IPFS, Libvirt,
+    Docker, Containers, WebGL (OpenGL ES), HTML5, JSON, XML,
+    AngularJS, JQuery, Ajax, and CSS3
   \item[Documentation] Org Mode, Doxygen, Markdown, ReStructuredText
     and \LaTeX{}
-  \item[Libraries] OpenMP, Qt, Gtk+, OpenGL, SQLite and Boost
+  \item[Libraries] Tensorflow, OpenMP, Qt, Gtk+, OpenGL, SQLite and Boost
   \item[Build Systems] Grunt, Gulp, Makefiles, CMake, and GNU Autotools
   \item[Development Tools] GIT, GDB, Jenkins, Unix Command Line,
     Linux, Arch Linux and Emacs
@@ -84,6 +89,12 @@ Waterloo, ID Number: 20580433
 
 \section{Work Experience}
 
+\cventry{Sept. 2017--Apr. 2018}{Fullstack Software
+  Developer}{University of Waterloo, Computer Science Computing
+  Facility}{Waterloo, Ontario}{}{\begin{itemize}
+  \item
+  \end{itemize}}
+  
 \cventry{May.--Aug. 2016 and Jan.--Apr. 2017}{Fullstack Software
   Developer}{BlueRover}{Kitchener, Ontario}{}{\begin{itemize}
   \item Engineered a trend analytics engine that identifies potential
@@ -103,6 +114,17 @@ Waterloo, ID Number: 20580433
     of the database.
   \item Designed and produced a backwards compatible service for
     sending email from enterprise applications.
+  \end{itemize}}
+
+\cventry{Jul.--Aug. 2013 and Jul.--Aug. 2014}{Sailing Instructor}{Camp
+  Tamarack Ltd.}{Bracebridge, Ontario}{}{\begin{itemize}
+  \item Appointed interim Head of Sailing whenever the usual head (my
+    supervisor) was unavailable (day off, arranging special events,
+    etc.)
+  \item Supervised young children in open water environment, acting as
+    both a teacher and a life guard.
+  \item Exhibited excellent teamwork skills through the fostering of
+    strong work relationships.
   \end{itemize}}
 
 \section{Education}
@@ -163,3 +185,8 @@ Waterloo, ID Number: 20580433
   Complete subset of the C language.}
 
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
