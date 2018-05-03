@@ -2,3 +2,5 @@
 *.log
 *.out
 /auto/
+*.pdf
+!/resume.pdf
