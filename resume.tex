@@ -1,18 +1,18 @@
 % Resume master document.
-% Copyright (C) 2015-2017 Kieran Colford
+% Copyright (C) 2015-2019 Kieran Colford
 %
 % All rights reserved.
 
-\documentclass[11pt,letterpaper]{moderncv}
+\documentclass[11pt,letterpaper,final]{moderncv}
 
 % moderncv theme
-\moderncvstyle{casual}
-\moderncvcolor{black}
+\moderncvtheme{casual}
 
 % misc
 \usepackage[utf8]{inputenc}
-\usepackage{lipsum}
-\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage[scale=0.80]{geometry}
+\recomputelengths
 
 % personal info
 \name{Kieran}{Colford}
@@ -22,58 +22,59 @@
 \social[linkedin]{kierancolford}
 \social[github]{kcolford}
 \extrainfo{StackOverflow: randomusername (over 6,000 reputation)}
-%\quote{Some quote}
 
 \begin{document}
 
-\makecvtitle%
+\makecvtitle
+
+%% Candidate for Bachelor of Computer Science at the University of
+%% Waterloo, term 3B.
 
 \section{Summary of Qualifications}
 
-\begin{itemize}
-\item Excellent problem-solving skills demonstrated by education
-  and self-initiated open source projects
-\item Commended by supervisors on a consistent basis for being a
-  highly reliable and independent hard worker
-\item Gained extensive skills through personal experience in a number
-  of programming languages and technologies.
-  \begin{description}
-  \item[Programming Languages] Rust, C/C++, Go, Java, Python,
-    Javascript/NodeJS, ReactJS, x86 Assembly (AT\&T syntax), Perl,
-    Haskell, Bourne Shell, SQL, Swift, Emacs Lisp, and Racket
-  \item[Technologies] Docker, Vagrant, Ansible, Virtual Box, Libvirt,
-    Xen, Neural Networks, iOS, TCP/IP, IPv6, UDP, SSL/TLS, Three.js,
-    Apache Web Server, Nginx, MySQL, PostgreSQL, CouchDB, Bind 9,
-    Busybox, Kerberos, OpenLDAP, Samba, Wire Guard, OpenVPN, X.509,
-    Let's Encrypt, GnuPG, IPFS, Libvirt, Docker, Containers, WebGL
-    (OpenGL ES), HTML5, JSON, YAML, XML, AngularJS, JQuery, Ajax, and
-    CSS3
-  \item[Documentation] Org Mode, Doxygen, Markdown, ReStructuredText
-    and \LaTeX{}
-  \item[Libraries] Tensorflow, OpenMP, Qt, Gtk+, OpenGL, SQLite and
-    Boost
-  \item[Build Systems] GatsbyJS, Grunt, Gulp, Makefiles, CMake, and
-    GNU Autotools
-  \item[Development Tools] GIT/Github, XCode, GDB, Jenkins, Unix
-    Command Line, Linux, Arch Linux and Emacs
-  \item[Cloud] AWS, Digital Ocean, Linode, Google Cloud, Firebase,
-    Heroku, and Netlify.
-  \end{description}
-\item Canadian Citizenship
-\end{itemize}
+\cvlistitem{Extensive professional work experience gained across many
+  business structures (startup, government/military, finance) and
+  technologies (frontend, backend, infrastructure, machine learning,
+  mobile).}
 
-\section{Work Experience}
+\cvlistitem{Successfully delivered projects individually and as a team
+  in private and open source settings.}
 
-\cventry{Jan. 2019--Apr. 2019}{Fullstack Software Developer}{R.C.A.F
-  Aerospace Warfare Centre, Innovation Lab}{Kitchener,
+\cvlistitem{Consistently recognized as a hard working, self-motivated
+  team leader.}
+
+\cvlistitem{Canadian Citizen}
+
+\cvcomputer{Languages}{Rust, C/C++, C\#, Go, Java, Python,
+  Javascript/NodeJS, SQL, and Swift}{Devops}{GIT, Github, Gitlab,
+  Jenkins, CircleCI, TravisCI, Docker, Vagrant, and Ansible}
+
+\cvcomputer{Cloud}{AWS, Digital Ocean, Google Cloud, Firebase, Heroku,
+  Open Stack, Cloudflare, and Netlify}{Technologies}{Linux (Arch
+  Linux), GatsbyJS, PWA, Tensorflow, WebAssembly, and PostgeSQL}
+
+\cvcomputer{Frameworks}{Cordova, React, .NET, Native iOS, Rails,
+  Django, and Native Android}{Business}{Scrum, Agile, Slack, Trello,
+  and Requirements Gathering}
+
+\section{Experience}
+
+\cventry{2014--present}{Candidate for Bachelor of Computer
+  Science}{University of Waterloo}{Waterloo, Ontario}{Term 3B}{}
+
+\cventry{Jan.--Apr. 2019}{Senior Development Lead}{R.C.A.F Aerospace
+  Warfare Centre, Innovation Lab}{Kitchener,
   Ontario}{}{\begin{itemize}
-  \item Conducted extensive user experience research and analysis on
-    federal government public servants and members of the armed
-    forces.
-  \item Designed and developed an iOS application from project start
-    to base-wide deployment.
-  \item Produced web marketing tools for the Lab to further existing
-    project goals.
+  \item Provided guidance and mentorship to junior developers based on
+    experience gained in multiple technical roles.
+  \item Designed, developed and deployed first mobile financial
+    processing application from problem definition through fleet-wide
+    adoption.
+  \item Led the adoption of best practice software development
+    life-cycle tooling including CI/CD, containerization and cloud
+    services.
+  \item Deployed first innovation lab promotional site by
+    collaborating with business stakeholders.
   \end{itemize}}
 
 \cventry{Sept. 2017--Apr. 2018}{Fullstack Software
@@ -109,16 +110,16 @@
     sending email from enterprise applications.
   \end{itemize}}
 
-% \cventry{Jul.--Aug. 2013 and Jul.--Aug. 2014}{Sailing Instructor}{Camp
-%   Tamarack Ltd.}{Bracebridge, Ontario}{}{\begin{itemize}
-%   \item Appointed interim Head of Sailing whenever the usual head (my
-%     supervisor) was unavailable (day off, arranging special events,
-%     etc.)
-%   \item Supervised young children in open water environment, acting as
-%     both a teacher and a life guard.
-%   \item Exhibited excellent teamwork skills through the fostering of
-%     strong work relationships.
-%   \end{itemize}}
+\cventry{Jul.--Aug. 2013 and Jul.--Aug. 2014}{Sailing Instructor}{Camp
+  Tamarack Ltd.}{Bracebridge, Ontario}{}{\begin{itemize}
+  \item Appointed interim Head of Sailing whenever the usual head (my
+    supervisor) was unavailable (day off, arranging special events,
+    etc.)
+  \item Supervised young children in open water environment, acting as
+    both a teacher and a life guard.
+  \item Exhibited excellent teamwork skills through the fostering of
+    strong work relationships.
+  \end{itemize}}
 
 \section{Education}
 
